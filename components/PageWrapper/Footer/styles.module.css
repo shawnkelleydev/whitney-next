@@ -1,0 +1,14 @@
+.footer {
+  background: var(--color-primary);
+  /* TODO: check color against bg */
+  color: #fff;
+  display: flex;
+  padding: 8px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}

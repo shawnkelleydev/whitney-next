@@ -9,7 +9,7 @@ export default function _head() {
         name='description'
         content='App description'
       />
-      {/* TODO: Add favicon to public */}
+      {/* TODO: Add custom favicon to public */}
       <link
         rel='icon'
         href='/favicon.ico'

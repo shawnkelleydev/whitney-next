@@ -11,7 +11,7 @@
   /* TODO: Select Theme Colors */
   --color-primary: #111;
   --color-secondary: #eee;
-  --color-accent: lime;
+  --color-accent: rgb(144, 103, 26);
 }
 
 a {

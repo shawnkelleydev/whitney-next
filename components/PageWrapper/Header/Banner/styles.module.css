@@ -1,0 +1,15 @@
+.banner {
+  display: flex;
+  flex: 2;
+}
+
+.banner h1 {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.banner small {
+  font-size: 1rem;
+  font-weight: 300;
+}

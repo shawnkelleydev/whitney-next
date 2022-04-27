@@ -1,9 +1,11 @@
 import Banner from './Banner'
 import Nav from './Nav'
 
+import styles from './styles.module.css'
+
 export default function Header({ pages }) {
   return (
-    <header>
+    <header className={styles.header}>
       <Banner />
       <Nav pages={pages} />
     </header>

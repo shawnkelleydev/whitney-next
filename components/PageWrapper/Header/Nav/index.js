@@ -10,7 +10,9 @@ export default function Nav({ pages }) {
           href={`/${page.toLowerCase()}`}
           key={i}
         >
-          <a>{page}</a>
+          <a>
+            <span>{page}</span>
+          </a>
         </Link>
       ))}
     </nav>
