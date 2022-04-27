@@ -1,11 +1,13 @@
 import Head from 'partials/_head'
-
-import styles from './styles.module.css'
+import PageWrapper from 'components/PageWrapper'
 
 export default function Home() {
+  // TODO: Add pages
+  const pages = ['home', 'page2', 'page3', 'page4']
+
   return (
-    <div className={styles.home}>
+    <PageWrapper pages={pages}>
       <Head />
-    </div>
+    </PageWrapper>
   )
 }
