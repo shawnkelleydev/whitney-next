@@ -7,7 +7,7 @@ export default function PageWrapper({ pages, children }) {
   return (
     <div className={styles['page-wrapper']}>
       <Header pages={pages} />
-      {children}
+      <div>{children}</div>
       <Footer />
     </div>
   )
