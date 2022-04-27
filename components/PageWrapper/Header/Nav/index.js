@@ -8,7 +8,7 @@ export default function Nav() {
   route = route.replace('/', '')
 
   // TODO: set pages
-  const pages = ['page1', 'page2', 'page3']
+  const pages = ['page1', 'page2', 'contact']
 
   return (
     <nav className={styles.nav}>
