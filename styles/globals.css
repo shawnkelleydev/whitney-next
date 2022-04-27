@@ -8,14 +8,13 @@
 }
 
 :root {
-  /* TODO: Select Theme Colors */
+  /* TODO: Set Theme Colors */
   --color-primary: #111;
   --color-secondary: #eee;
   --color-accent: rgb(144, 103, 26);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
