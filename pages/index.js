@@ -1,4 +1,4 @@
-import * as Head from 'partials/_head'
+import Head from 'partials/_head'
 
 import styles from './styles.module.css'
 
