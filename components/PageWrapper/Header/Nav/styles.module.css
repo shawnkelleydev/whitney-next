@@ -20,6 +20,7 @@
 
 @media (max-width: 768px) {
   .nav {
+    background: var(--color-primary);
     bottom: 0;
     height: 44px;
     left: 0;
