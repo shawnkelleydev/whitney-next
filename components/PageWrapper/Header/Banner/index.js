@@ -8,8 +8,9 @@ export default function Banner() {
       <Link href='/'>
         <a>
           <h1>
-            <b>Title</b>
-            <small>Sub Title</small>
+            {/* TODO: Add title */}
+            <b>title</b>
+            {/* TODO: optional <small>sub title</small> */}
           </h1>
         </a>
       </Link>
