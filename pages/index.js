@@ -1,10 +1,9 @@
 import Head from 'partials/_head'
 import PageWrapper from 'components/PageWrapper'
 
-export default function Home() {
-  // TODO: Add pages
-  const pages = ['page1', 'page2', 'page3', 'page4', 'page5']
+import { pages } from 'constants'
 
+export default function Home() {
   return (
     <PageWrapper pages={pages}>
       <Head />

@@ -6,10 +6,16 @@
 .nav a {
   display: flex;
   flex: 1;
+  padding: 4px;
+  transition: 0.1s ease-out;
 }
 
 .nav span {
   margin: auto;
+}
+
+.nav .active {
+  background: var(--color-accent);
 }
 
 @media (max-width: 768px) {
