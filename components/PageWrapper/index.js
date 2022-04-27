@@ -1,12 +1,15 @@
+import Head from 'partials/_head'
+
 import Footer from './Footer'
 import Header from './Header'
 
 import styles from './styles.module.css'
 
-export default function PageWrapper({ pages, children }) {
+export default function PageWrapper({ children }) {
   return (
     <div className={styles['page-wrapper']}>
-      <Header pages={pages} />
+      <Head />
+      <Header />
       <div>{children}</div>
       <Footer />
     </div>

@@ -3,11 +3,11 @@ import Nav from './Nav'
 
 import styles from './styles.module.css'
 
-export default function Header({ pages }) {
+export default function Header() {
   return (
     <header className={styles.header}>
       <Banner />
-      <Nav pages={pages} />
+      <Nav />
     </header>
   )
 }
