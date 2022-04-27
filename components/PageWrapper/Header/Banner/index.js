@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <Link
       className={styles.banner}
-      href={`/`}
+      href='/'
     >
       <a>
         <h1>
