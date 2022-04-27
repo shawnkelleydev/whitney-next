@@ -10,7 +10,7 @@ export default function Page3() {
 
   return (
     <PageWrapper>
-      <h1>{route}</h1>
+      <h2>{route}</h2>
     </PageWrapper>
   )
 }

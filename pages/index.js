@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      <h1>home</h1>
+      <h2>home</h2>
     </PageWrapper>
   )
 }
