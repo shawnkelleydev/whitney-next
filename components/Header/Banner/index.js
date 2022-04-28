@@ -9,8 +9,8 @@ export default function Banner() {
       <Link href='/'>
         <a>
           <h1>
-            <b>{meta.title}</b>
-            {/* TODO: optional <small>{meta.tag}</small> */}
+            <b>{meta.TITLE}</b>
+            {/* TODO: optional <small>{meta.TAG}</small> */}
           </h1>
         </a>
       </Link>

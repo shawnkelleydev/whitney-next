@@ -1,10 +1,10 @@
 // TODO: Edit meta data
 const meta = {
-  author: 'author',
-  description: 'description',
-  keywords: 'keyword1, keyword2, keyword3',
-  tag: 'tag',
-  title: 'title',
+  AUTHOR: 'author',
+  DESCRIPTION: 'description',
+  KEYWORDS: 'keyword1, keyword2, keyword3',
+  TAG: 'tag',
+  TITLE: 'title',
 }
 
 export default meta

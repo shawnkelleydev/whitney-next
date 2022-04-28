@@ -5,14 +5,14 @@ import meta from 'constants/meta'
 export default function _head() {
   return (
     <Head>
-      <title>{meta.title}</title>
+      <title>{meta.TITLE}</title>
       <meta
         name='description'
-        content={meta.description}
+        content={meta.DESCRIPTION}
       />
       <meta
         name='keywords'
-        content={meta.keywords}
+        content={meta.KEYWORDS}
       />
       {/* TODO: Add custom favicon to public */}
       <link
