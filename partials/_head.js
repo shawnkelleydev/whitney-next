@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import metaData from 'constants/meta'
+
 export default function _head() {
   return (
     <Head>
@@ -7,7 +9,7 @@ export default function _head() {
       <title>App Title</title>
       <meta
         name='description'
-        content='App description'
+        content={metaData.description}
       />
       {/* TODO: Add custom favicon to public */}
       <link

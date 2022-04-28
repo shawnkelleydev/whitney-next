@@ -1,3 +1,6 @@
+// throws async errors with aliasing
+import metaData from 'constants/meta'
+
 import styles from './styles.module.css'
 
 export default function Footer() {
@@ -6,8 +9,9 @@ export default function Footer() {
 
   return (
     <ul className={styles.ul}>
-      {/* TODO: Add author */}
-      <li>Copyright © {year} [author].</li>
+      <li>
+        Copyright © {year} {metaData.author}.
+      </li>
       <li>All rights reserved.</li>
     </ul>
   )

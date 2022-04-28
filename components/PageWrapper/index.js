@@ -1,9 +1,9 @@
-import Footer from './Footer'
+import Footer from 'components/Footer'
 import Head from 'partials/_head'
-import Header from './Header'
+import Header from 'components/Header'
+import PageContent from 'components/PageContent'
 
 import styles from './styles.module.css'
-import PageContent from 'components/PageContent'
 
 export default function PageWrapper({ children }) {
   return (
