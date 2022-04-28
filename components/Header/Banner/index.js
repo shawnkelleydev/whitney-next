@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import meta from 'constants/meta'
 
 import styles from './styles.module.css'
 
@@ -8,9 +9,8 @@ export default function Banner() {
       <Link href='/'>
         <a>
           <h1>
-            {/* TODO: Add title */}
-            <b>title</b>
-            {/* TODO: optional <small>sub title</small> */}
+            <b>{meta.title}</b>
+            {/* TODO: optional <small>{meta.tag}</small> */}
           </h1>
         </a>
       </Link>

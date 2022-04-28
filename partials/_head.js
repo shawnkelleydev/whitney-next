@@ -1,15 +1,18 @@
 import Head from 'next/head'
 
-import metaData from 'constants/meta'
+import meta from 'constants/meta'
 
 export default function _head() {
   return (
     <Head>
-      {/* TODO: Add title / description */}
-      <title>App Title</title>
+      <title>{meta.title}</title>
       <meta
         name='description'
-        content={metaData.description}
+        content={meta.description}
+      />
+      <meta
+        name='keywords'
+        content={meta.keywords}
       />
       {/* TODO: Add custom favicon to public */}
       <link
