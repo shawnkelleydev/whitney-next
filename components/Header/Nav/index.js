@@ -1,14 +1,12 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { pages } from 'constants/data'
 
 import styles from './styles.module.css'
 
 export default function Nav() {
   let { route } = useRouter()
   route = route.replace('/', '')
-
-  // TODO: set pages
-  const pages = ['about', 'work', 'contact']
 
   return (
     <nav className={styles.nav}>

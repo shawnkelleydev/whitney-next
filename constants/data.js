@@ -16,6 +16,9 @@ export const meta = {
   TITLE: 'title',
 }
 
+// TODO: edit pages
+export const pages = ['about', 'work', 'contact']
+
 // TODO: edit footerLinks
 export const footerLinks = [
   { name: 'LINK1', url: '/' },
