@@ -11,7 +11,7 @@ export const meta = {
   DEVELOPER_URL: 'https://www.shawnkelley.dev',
   KEYWORDS: 'flute, whitney, kelley, lessons, flute lessons',
   TAG: 'Flute',
-  TITLE: 'Whitney Kelley',
+  TITLE: 'Dr. Whitney Kelley',
 }
 
 // TODO: edit pages

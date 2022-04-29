@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 export default function Credit() {
   return (
     <small className={styles.credit}>
-      Site developed by <Link text={meta.DEVELOPER} url={meta.DEVELOPER_URL} />.
+      Site developed by <Link url={meta.DEVELOPER_URL}>{meta.DEVELOPER}</Link>.
     </small>
   )
 }

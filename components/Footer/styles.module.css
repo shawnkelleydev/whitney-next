@@ -13,14 +13,13 @@
   text-align: center;
 }
 
+.footer a {
+  --text-color: var(--color-accent);
+  --hover-color: #fff;
+}
+
 @media (max-width: 768px) {
   .footer {
     margin-bottom: 45px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer a:hover {
-    text-decoration: underline;
   }
 }

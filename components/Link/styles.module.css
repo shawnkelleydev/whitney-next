@@ -1,3 +1,13 @@
 .a {
-  color: var(--color-accent);
+  --text-color: var(--color-primary);
+  --hover-color: var(--color-accent);
+  color: var(--text-color);
+  position: relative;
+  transition: 0.1s ease-out;
+}
+
+@media (min-width: 1024px) {
+  .a:hover {
+    color: var(--hover-color);
+  }
 }

@@ -1,18 +1,21 @@
 .home {
-  display: flex;
+  --gutter: 24px;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: var(--gutter);
 }
 
 .home,
 .home section,
 .home article {
+  display: flex;
   flex: 1;
 }
 
 .home article,
 .home section {
   flex-basis: 200px;
+  flex-direction: column;
+  gap: var(--gutter);
 }
 
 .home h2 {
