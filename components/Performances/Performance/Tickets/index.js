@@ -8,7 +8,7 @@ export default function Tickets({ tickets }) {
         {Object.keys(tickets).map((key, i) => (
           <li key={i}>
             <span>{key}</span>
-            <span>{!!tickets[key] ? tickets[key] : 'FREE'}</span>
+            <span>{!!tickets[key] ? '$' + tickets[key] : 'FREE'}</span>
           </li>
         ))}
       </ul>

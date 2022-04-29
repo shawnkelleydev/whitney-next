@@ -7,13 +7,13 @@ import Tickets from './Tickets'
 
 export default function Performance({ performance }) {
   return (
-    <li className={styles.performance}>
-      <Link url={performance.url}>
+    <a href={performance.url} rel='noreferrer' target='_blank'>
+      <li className={styles.performance}>
         <h3>{performance.title}</h3>
-      </Link>
-      <Repertoire repertoire={performance.repertoire} />
-      <Dates dates={performance.dates} />
-      <Tickets tickets={performance.tickets} />
-    </li>
+        <Repertoire repertoire={performance.repertoire} />
+        <Dates dates={performance.dates} />
+        <Tickets tickets={performance.tickets} />
+      </li>
+    </a>
   )
 }

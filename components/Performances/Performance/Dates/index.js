@@ -1,6 +1,6 @@
 export default function Dates({ dates }) {
   return (
-    <>
+    <div>
       <h4>Dates</h4>
       <ul>
         {dates.map((date, i) => (
@@ -9,6 +9,6 @@ export default function Dates({ dates }) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
