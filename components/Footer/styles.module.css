@@ -13,10 +13,6 @@
   text-align: center;
 }
 
-.footer a {
-  color: var(--color-accent);
-}
-
 @media (max-width: 768px) {
   .footer {
     margin-bottom: 45px;
