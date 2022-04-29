@@ -1,0 +1,9 @@
+.performance {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.performance ul {
+  padding: 12px;
+}
