@@ -1,0 +1,21 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.home,
+.home section,
+.home article {
+  flex: 1;
+}
+
+.home article,
+.home section {
+  flex-basis: 200px;
+}
+
+.home h2 {
+  color: var(--color-primary);
+  font-weight: 500;
+}

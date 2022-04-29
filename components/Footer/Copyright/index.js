@@ -3,13 +3,13 @@ import { meta } from 'constants/data'
 
 import styles from './styles.module.css'
 
-export default function Footer() {
+export default function Copyright() {
   return (
-    <ul className={styles.ul}>
-      <li>
+    <div className={styles.copyright}>
+      <small>
         Copyright © {meta.CURRENT_YEAR} {meta.AUTHOR}.
-      </li>
-      <li>All rights reserved.</li>
-    </ul>
+      </small>
+      <small>All rights reserved.</small>
+    </div>
   )
 }

@@ -1,13 +1,30 @@
 .footer {
+  align-items: center;
   background: var(--color-primary);
   /* TODO: check color against bg */
   color: #fff;
   display: flex;
-  padding: 8px;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.footer small {
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
   .footer {
     margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer a:hover {
+    text-decoration: underline;
   }
 }

@@ -1,5 +1,4 @@
-.ul {
-  margin: auto;
-  padding: 0;
-  text-align: center;
+.copyright {
+  display: flex;
+  flex-direction: column;
 }

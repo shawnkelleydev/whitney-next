@@ -10,7 +10,7 @@ export default function Banner() {
         <a>
           <h1>
             <b>{meta.TITLE}</b>
-            {/* TODO: optional <small>{meta.TAG}</small> */}
+            {/* <small>{meta.TAG}</small> */}
           </h1>
         </a>
       </Link>
