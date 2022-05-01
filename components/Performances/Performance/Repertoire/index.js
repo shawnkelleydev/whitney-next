@@ -7,7 +7,7 @@ export default function Repertoire({ repertoire }) {
       <ul>
         {repertoire.map((piece, i) => (
           <li key={i}>
-            {piece.composer}, <i>{piece.title}</i>
+            {piece.composer}, <cite>{piece.title}</cite>
           </li>
         ))}
       </ul>

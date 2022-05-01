@@ -2,6 +2,8 @@ export const denverPhilSchedule = [
   {
     title: 'Beethoven Celebration',
     url: 'https://denverphilharmonic.org/production/beethoven-celebration-2022/',
+    imageUrl:
+      'https://denverphilharmonic.org/wp-content/uploads/2021/08/dpo-art2122-d2-bday.jpg',
     repertoire: [
       { composer: 'Wittry', title: 'Ode to Joy Fanfare' },
       { composer: 'Beethoven', title: 'Choral Fantasy' },
@@ -10,15 +12,15 @@ export const denverPhilSchedule = [
     dates: [
       {
         year: 2022,
-        month: 'May',
+        month: 5,
         day: 25,
-        time: '7:30pm',
+        time: '19:30',
       },
       {
         year: 2022,
-        month: 'May',
+        month: 5,
         day: 26,
-        time: '7:30pm',
+        time: '19:30',
       },
     ],
     tickets: {
@@ -28,4 +30,19 @@ export const denverPhilSchedule = [
       kids: 0,
     },
   },
+]
+
+export const months = [
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  'july',
+  'august',
+  'september',
+  'october',
+  'november',
+  'december',
 ]

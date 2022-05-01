@@ -1,0 +1,74 @@
+.button {
+  --radius: 8px;
+  --transition: 0.3s ease-out;
+  --transition-bezier: 0.5s cubic-bezier(0.59, -0.39, 0.42, 1.52);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius);
+  color: #fff;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+  text-transform: uppercase;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.button::before {
+  background: var(--color-primary);
+  border-radius: var(--radius);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.button::after {
+  background: var(--color-accent);
+  border-radius: 50%;
+  content: '';
+  opacity: 0.8;
+  height: 0;
+  width: 0;
+  position: absolute;
+  transition: var(--transition);
+  top: 45%;
+  left: 47%;
+  z-index: -1;
+}
+
+.button svg {
+  fill: #fff;
+  flex: 1;
+  transform: scale(0.6);
+  transition: var(--transition-bezier);
+  position: relative;
+}
+
+.button span {
+  flex: 2;
+  transition: var(--transition-bezier);
+}
+
+.button:hover svg {
+  fill: #111;
+  transform: scale(0.8);
+}
+
+.button:hover span {
+  color: #111;
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.button:hover::after {
+  height: 190px;
+  width: 190px;
+  top: -98%;
+  left: -5%;
+}
