@@ -1,6 +1,9 @@
 .header {
-  background: var(--color-primary);
   display: flex;
+}
+
+.header div {
+  flex: 1;
 }
 
 .header h1,

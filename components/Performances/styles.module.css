@@ -1,0 +1,11 @@
+.performances {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.performances > ul {
+  display: flex;
+  flex-wrap: wrap;
+}

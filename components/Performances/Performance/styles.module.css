@@ -4,6 +4,7 @@
   box-shadow: 0 4px 8px #555;
   color: #111;
   display: flex;
+  flex: 1;
   flex-direction: column;
   position: relative;
   transition: 0.3s cubic-bezier(0.59, -0.39, 0.42, 1.52);

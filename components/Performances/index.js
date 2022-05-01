@@ -1,6 +1,8 @@
-import { denverPhilSchedule, months } from 'constants/schedule'
+import { denverPhilSchedule } from 'constants/schedule'
 
 import Performance from './Performance'
+
+import styles from './styles.module.css'
 
 export default function Performances() {
   let todayDate = new Date()
@@ -8,7 +10,7 @@ export default function Performances() {
   const month = todayDate.getMonth() + 1
 
   return (
-    <section>
+    <section className={styles.performances}>
       <h2>performances</h2>
       <ul>
         {denverPhilSchedule

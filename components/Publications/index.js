@@ -4,7 +4,6 @@ import { pubs } from 'constants/pub'
 import styles from './styles.module.css'
 
 export default function Publications() {
-  console.log(pubs)
   return (
     <section className={styles.pubs}>
       <h2>publications</h2>
@@ -20,9 +19,8 @@ export default function Publications() {
             return (
               <li key={i}>
                 <Link url={pub.link}>
-                  <cite>{pub.name}</cite>, <cite>{pub.parent}</cite>
+                  <cite>{pub.name}</cite>, <cite>{pub.parent}</cite>.
                 </Link>
-                .
               </li>
             )
         })}

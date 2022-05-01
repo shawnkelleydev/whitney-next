@@ -15,7 +15,7 @@ export const meta = {
 }
 
 // TODO: edit pages
-export const pages = ['lessons', 'contact']
+export const pages = ['home', 'lessons', 'contact']
 
 // TODO: edit footerLinks
 export const footerLinks = [

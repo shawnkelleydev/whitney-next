@@ -5,18 +5,9 @@
   padding: var(--gutter);
 }
 
-.home,
-.home section,
-.home article {
+.home {
   display: flex;
   flex: 1;
-}
-
-.home article,
-.home section {
-  flex-basis: 200px;
-  flex-direction: column;
-  gap: var(--gutter);
 }
 
 .home h2 {

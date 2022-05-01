@@ -1,0 +1,44 @@
+.nav {
+  /* background: var(--color-primary); */
+  border: 1px solid #111;
+  display: flex;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.nav a {
+  color: #111;
+  display: flex;
+  flex: 1;
+  padding: 24px;
+  transition: 0.25s ease-out;
+}
+
+.nav span {
+  margin: auto;
+}
+
+.nav .active {
+  background: var(--color-accent);
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    bottom: 0;
+    height: 44px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav a:hover {
+    background: var(--color-accent);
+    color: #111;
+  }
+}

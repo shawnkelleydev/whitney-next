@@ -1,7 +1,7 @@
 export const pubs = [
   {
     name: 'Practice What You Think: The Value and Application of Mental Strategies in Practice and Performance of Programmatic Music',
-    parent: "master's thesis, university of colorado",
+    parent: "Master's thesis, university of colorado",
     year: 2011,
   },
   {

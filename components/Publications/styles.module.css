@@ -1,7 +1,9 @@
+.pubs,
 .pubs ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  flex: 1;
 }
 
 .pubs cite {
