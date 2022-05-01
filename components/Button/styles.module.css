@@ -2,13 +2,13 @@
   --radius: 8px;
   --transition: 0.3s ease-out;
   --transition-bezier: 0.5s cubic-bezier(0.59, -0.39, 0.42, 1.52);
+  align-items: center;
   background: transparent;
   border: none;
   border-radius: var(--radius);
   color: #fff;
   display: flex;
-  font-size: 1.1rem;
-  font-weight: 500;
+  flex: 1;
   overflow: hidden;
   padding: 8px;
   position: relative;
@@ -33,42 +33,46 @@
   background: var(--color-accent);
   border-radius: 50%;
   content: '';
-  opacity: 0.8;
-  height: 0;
-  width: 0;
+  height: 5px;
+  width: 5px;
   position: absolute;
-  transition: var(--transition);
+  transition: 1s ease-out;
   top: 45%;
-  left: 47%;
+  left: 18%;
   z-index: -1;
+}
+
+.button span {
+  flex: 1;
+  transition: var(--transition-bezier);
 }
 
 .button svg {
   fill: #fff;
-  flex: 1;
-  transform: scale(0.6);
+  transform: scale(0.8);
   transition: var(--transition-bezier);
-  position: relative;
 }
 
-.button span {
+.button strong {
   flex: 2;
+  font-size: 1.3rem;
   transition: var(--transition-bezier);
 }
 
 .button:hover svg {
   fill: #111;
-  transform: scale(0.8);
+  transform: scale(1);
 }
 
-.button:hover span {
+.button:hover strong {
   color: #111;
-  transform: rotate(-10deg) scale(1.1);
+  transform: rotate(-5deg) scale(1.3) translate(-5px, -2px);
 }
 
 .button:hover::after {
-  height: 190px;
-  width: 190px;
-  top: -98%;
-  left: -5%;
+  box-shadow: 0 0 0 100px var(--color-primary), 0 0 0 150px var(--color-accent);
+  height: 500px;
+  width: 500px;
+  top: -273%;
+  left: -35%;
 }

@@ -1,0 +1,9 @@
+.pubs ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pubs cite {
+  text-transform: capitalize;
+}

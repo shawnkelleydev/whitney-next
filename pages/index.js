@@ -2,6 +2,7 @@ import Banner from 'components/Banner'
 import Bio from 'components/Bio'
 import PageWrapper from 'components/PageWrapper'
 import Performances from 'components/Performances'
+import Publications from 'components/Publications'
 
 import styles from './styles.module.css'
 
@@ -12,9 +13,7 @@ export default function Home() {
       <div className={styles.home}>
         <Bio />
         <Performances />
-        <section>
-          <h2>publications</h2>
-        </section>
+        <Publications />
       </div>
     </PageWrapper>
   )

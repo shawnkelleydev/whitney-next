@@ -23,8 +23,10 @@ export default function Performance({ performance }) {
         <Tickets tickets={performance.tickets} />
         <a href={performance.url} target='_blank' rel='noreferrer'>
           <Button>
-            <Ticket />
-            <span>get tickets</span>
+            <span>
+              <Ticket />
+            </span>
+            <strong>get tickets</strong>
           </Button>
         </a>
       </div>

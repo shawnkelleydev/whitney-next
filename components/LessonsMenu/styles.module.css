@@ -1,0 +1,4 @@
+.lessons-menu a {
+  border: 1px solid var(--color-primary);
+  padding: 8px;
+}
