@@ -1,6 +1,7 @@
 export const denverPhilSchedule = [
   {
     title: 'Beethoven Celebration',
+    performers: ['Denver Philharmonic Orchestra'],
     url: 'https://denverphilharmonic.org/production/beethoven-celebration-2022/',
     imageUrl:
       'https://denverphilharmonic.org/wp-content/uploads/2021/08/dpo-art2122-d2-bday.jpg',
