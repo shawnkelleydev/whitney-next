@@ -1,4 +1,5 @@
 .a {
+  --active-color: #fff;
   --background: none;
   --text-color: var(--color-primary);
   --hover-color: var(--color-accent);
@@ -8,8 +9,10 @@
   transition: 0.1s ease-out;
 }
 
-@media (min-width: 1024px) {
-  .a:hover {
-    color: var(--hover-color);
-  }
+.active {
+  color: #fff;
+}
+
+.a:hover {
+  color: var(--hover-color);
 }
