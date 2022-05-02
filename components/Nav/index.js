@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'components/Link'
 import { useRouter } from 'next/router'
 import { pages } from 'constants/data'
 
@@ -11,10 +11,8 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       {pages.map((page, i) => (
-        <Link href={page !== 'home' ? `/${page.toLowerCase()}` : '/'} key={i}>
-          <a className={page === route ? styles.active : ''}>
-            <span>{page}</span>
-          </a>
+        <Link url={page !== 'home' ? `/${page.toLowerCase()}` : '/'} key={i}>
+          {page}
         </Link>
       ))}
     </nav>

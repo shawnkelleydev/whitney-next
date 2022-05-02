@@ -2,10 +2,37 @@
   position: relative;
 }
 
-.banner h2 {
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.overlay div {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.overlay h1 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  right: 20%;
-  top: 40%;
-  position: absolute;
+  transition: 0.3s cubic-bezier(0.59, -0.39, 0.42, 1.52);
+}
+
+.overlay b {
+  color: #111;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1rem, 3vw, 4rem);
+  text-align: center;
+}
+
+.overlay small {
+  color: #555;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.8rem, 2vw, 2rem);
 }

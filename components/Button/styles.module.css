@@ -1,4 +1,6 @@
 .button {
+  --background-color: var(--color-primary);
+  --background-animation-color: var(--color-accent);
   --radius: 8px;
   --transition: 0.3s ease-out;
   --transition-bezier: 0.5s cubic-bezier(0.59, -0.39, 0.42, 1.52);
@@ -18,7 +20,7 @@
 }
 
 .button::before {
-  background: var(--color-primary);
+  background: var(--background-color);
   border-radius: var(--radius);
   content: '';
   position: absolute;
