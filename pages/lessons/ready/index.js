@@ -6,8 +6,7 @@ import styles from './styles.module.css'
 export default function Ready() {
   return (
     <PageWrapper>
-      <LessonsMenu />
-      <div>ready</div>
+      <h2>ready</h2>
     </PageWrapper>
   )
 }

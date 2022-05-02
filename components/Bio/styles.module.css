@@ -1,6 +1,6 @@
 .bio {
   display: flex;
-  flex: 1;
+  flex: 1 280px;
   flex-direction: column;
   gap: 24px;
 }

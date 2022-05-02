@@ -9,7 +9,6 @@ import styles from './styles.module.css'
 export default function Home() {
   return (
     <PageWrapper>
-      <Banner />
       <div className={styles.home}>
         <Bio />
         <Performances />

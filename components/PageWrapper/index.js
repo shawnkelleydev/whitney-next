@@ -10,7 +10,6 @@ export default function PageWrapper({ children }) {
   return (
     <div className={styles['page-wrapper']}>
       <Head />
-      {/* <Header /> */}
       <Nav />
       <PageContent>{children}</PageContent>
       <Footer />

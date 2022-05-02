@@ -1,6 +1,6 @@
 .performances {
   display: flex;
-  flex: 1;
+  flex: 1 300px;
   flex-direction: column;
   gap: 24px;
 }

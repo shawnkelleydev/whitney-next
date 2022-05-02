@@ -6,8 +6,7 @@ import styles from './styles.module.css'
 export default function Online() {
   return (
     <PageWrapper>
-      <LessonsMenu />
-      <div>online</div>
+      <h2>online</h2>
     </PageWrapper>
   )
 }

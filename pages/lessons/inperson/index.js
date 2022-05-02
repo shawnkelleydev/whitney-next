@@ -6,8 +6,7 @@ import styles from './styles.module.css'
 export default function InPerson() {
   return (
     <PageWrapper>
-      <LessonsMenu />
-      <div>in person</div>
+      <h2>in person</h2>
     </PageWrapper>
   )
 }
