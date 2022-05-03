@@ -6,11 +6,17 @@ import Ticket from 'components/Icons/Ticket'
 import styles from './styles.module.css'
 
 export default function Performance({ performance }) {
-  const { dates, imageUrl, performers, title, url } = performance
+  const { dates, imageAlt, imageUrl, performers, title, url } = performance
 
   return (
     <li className={styles.performance}>
-      <Image height='800' layout='responsive' src={imageUrl} width='1440' />
+      <Image
+        alt={imageAlt}
+        height='800'
+        layout='responsive'
+        src={imageUrl}
+        width='1440'
+      />
       <div>
         <div>
           <h3>{title}</h3>
