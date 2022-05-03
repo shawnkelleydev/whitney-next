@@ -6,6 +6,10 @@
   flex: 1 280px;
 }
 
+.pubs h2 {
+  color: var(--color-primary);
+}
+
 .pubs cite {
   text-transform: capitalize;
 }

@@ -16,8 +16,7 @@ export default function Performances() {
         {denverPhilSchedule
           .filter(
             (concert) =>
-              concert.dates[concert.dates.length - 1].year >= year &&
-              concert.dates[concert.dates.length - 1].month >= month
+              concert.dates.year >= year && concert.dates.month >= month
           )
           .map((performance, i) => (
             <Performance key={i} performance={performance} />

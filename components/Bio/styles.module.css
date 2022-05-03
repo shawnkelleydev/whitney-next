@@ -4,3 +4,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
+.bio h2 {
+  color: var(--color-primary);
+}

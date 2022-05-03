@@ -10,9 +10,11 @@ export default function Home() {
   return (
     <PageWrapper>
       <div className={styles.home}>
-        <Bio />
         <Performances />
-        <Publications />
+        <div>
+          <Bio />
+          <Publications />
+        </div>
       </div>
     </PageWrapper>
   )

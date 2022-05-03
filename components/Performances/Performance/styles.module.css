@@ -1,5 +1,6 @@
 .performance {
   --radius: 24px;
+  background: #fff;
   border-radius: var(--radius);
   box-shadow: 0 4px 8px #555;
   color: #111;
@@ -21,23 +22,32 @@
 
 .performance > div {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 24px;
   padding: 24px;
 }
 
+.performance > div > div {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
 .performance h3 {
   font-size: 1.6rem;
   text-align: center;
-}
-
-.performance h3,
-.performance h4 {
   color: var(--color-primary);
   text-transform: uppercase;
+}
+
+.performance time {
+  color: #555;
+  text-align: center;
 }
 
 .performance a {
   display: flex;
   flex: 1;
+  margin-top: auto;
 }
