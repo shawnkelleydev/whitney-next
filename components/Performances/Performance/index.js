@@ -9,8 +9,7 @@ import styles from './styles.module.css'
 import Tickets from './Tickets'
 
 export default function Performance({ performance }) {
-  const { dates, imageUrl, performers, repertoire, tickets, title, url } =
-    performance
+  const { imageUrl, performers, title, url } = performance
 
   return (
     <li className={styles.performance}>
@@ -18,9 +17,6 @@ export default function Performance({ performance }) {
       <div>
         <h3>{title}</h3>
         <Performers performers={performers} />
-        <Repertoire repertoire={repertoire} />
-        <Dates dates={dates} />
-        <Tickets tickets={tickets} />
         <a href={url} target='_blank' rel='noreferrer'>
           <Button>
             <span>
