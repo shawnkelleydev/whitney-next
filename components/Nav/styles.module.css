@@ -44,10 +44,10 @@
   }
 
   .nav a {
-    color: #fff;
+    --text-color: #fff;
   }
 
   .nav a:not(:last-child)::after {
-    background: rgb(60, 60, 60);
+    background: transparent;
   }
 }
