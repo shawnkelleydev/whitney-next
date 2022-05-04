@@ -1,6 +1,7 @@
 import { denverPhilSchedule } from 'constants/schedule'
 
 import Performance from './Performance'
+import Strip from 'components/Strip'
 
 import styles from './styles.module.css'
 
@@ -10,9 +11,9 @@ export default function Performances() {
   const month = todayDate.getMonth() + 1
 
   return (
-    <section className={styles.performances}>
+    <Strip>
       <h2>performances</h2>
-      <ul>
+      <ul className={styles.performances}>
         {denverPhilSchedule
           .filter(
             (concert) =>
@@ -22,6 +23,6 @@ export default function Performances() {
             <Performance key={i} performance={performance} />
           ))}
       </ul>
-    </section>
+    </Strip>
   )
 }
