@@ -12,8 +12,13 @@ export default function PrivateLessons() {
       </Strip>
       <section className={styles.quotes}>
         <blockquote>
-          <q>Considerable technique.</q>
-          <cite>Winston-Salem Journal</cite>
+          <q>
+            Teaching music is not my main purpose. I want to make good citizens.
+            If children hear fine music from the day of their birth and learn to
+            play it, they develop sensitivity, discipline and endurance. They
+            get a beautiful heart.
+          </q>
+          <cite>Shinichi Suzuki</cite>
         </blockquote>
       </section>
     </PageWrapper>

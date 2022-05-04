@@ -14,9 +14,9 @@
 }
 
 .quotes q {
-  font-size: 2rem;
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
 }
 
 .quotes cite {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 2vw, 2rem);
 }
