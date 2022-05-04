@@ -5,9 +5,9 @@ import styles from './styles.module.css'
 export default function LessonsMenu() {
   return (
     <div className={styles['lessons-menu']}>
-      <Link url='/lessons/inperson'>in person</Link>
+      <Link url='/lessons/ready'>is my child ready?</Link>
+      <Link url='/lessons/live'>live</Link>
       <Link url='/lessons/online'>online</Link>
-      <Link url='/lessons/ready'>ready</Link>
     </div>
   )
 }
