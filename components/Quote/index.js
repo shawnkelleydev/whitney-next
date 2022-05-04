@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 export default function Quote() {
   const quote = {
     citation: 'Shinichi Suzuki',
-    text: 'Beautiful music, beautiul heart',
+    text: 'Beautiful music, beautiful heart',
   }
 
   return (
