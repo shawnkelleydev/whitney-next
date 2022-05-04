@@ -1,0 +1,22 @@
+.quotes {
+  display: flex;
+  flex: 1;
+  padding: 48px;
+}
+
+.quotes blockquote {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+  text-align: center;
+}
+
+.quotes q {
+  font-size: 2rem;
+}
+
+.quotes cite {
+  font-size: 1.3rem;
+}
