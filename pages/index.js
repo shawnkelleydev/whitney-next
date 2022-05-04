@@ -1,4 +1,3 @@
-import Banner from 'components/Banner'
 import Bio from 'components/Bio'
 import PageWrapper from 'components/PageWrapper'
 import Performances from 'components/Performances'

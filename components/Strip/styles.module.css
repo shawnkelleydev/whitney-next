@@ -1,0 +1,10 @@
+.strip {
+  background: #ebebeb;
+  box-shadow: 0 4px 16px #555;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 24px 48px 24px;
+  z-index: 1;
+}
