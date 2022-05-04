@@ -8,7 +8,7 @@ export default function PrivateLessons() {
   return (
     <PageWrapper>
       <Strip>
-        <h2>Private Lessons</h2>
+        <h2>private lessons</h2>
       </Strip>
       <section className={styles.quotes}>
         <blockquote>
