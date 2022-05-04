@@ -1,0 +1,7 @@
+.lessons-strip {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1048px;
+}

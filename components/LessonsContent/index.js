@@ -10,6 +10,8 @@ export default function LessonsContent() {
   const router = useRouter()
   let { route } = router
 
+  route === '/lessons' && router.push('/lessons/ready')
+
   return (
     <div className={styles['lessons-content']}>
       {route.includes('live') && <Live />}
