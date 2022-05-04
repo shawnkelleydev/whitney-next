@@ -1,4 +1,8 @@
+.lessons-menu {
+  display: flex;
+}
+
 .lessons-menu a {
-  border: 1px solid var(--color-primary);
-  padding: 8px;
+  flex: 1;
+  text-align: center;
 }

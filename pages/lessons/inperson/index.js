@@ -1,12 +1,12 @@
-import LessonsMenu from 'components/LessonsMenu'
+import LessonStrip from 'components/LessonsStrip'
 import PageWrapper from 'components/PageWrapper'
-
-import styles from './styles.module.css'
+import Quote from 'components/Quote'
 
 export default function InPerson() {
   return (
     <PageWrapper>
-      <h2>in person</h2>
+      <LessonStrip />
+      <Quote />
     </PageWrapper>
   )
 }
