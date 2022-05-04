@@ -11,10 +11,10 @@ export default function Home() {
     <PageWrapper>
       <div className={styles.home}>
         <Performances />
-        <div>
+        <section>
           <Bio />
           <Publications />
-        </div>
+        </section>
       </div>
     </PageWrapper>
   )

@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 
 export default function Publications() {
   return (
-    <section className={styles.pubs}>
+    <article className={styles.pubs}>
       <h2>publications</h2>
       <ul>
         {pubs.map((pub, i) => {
@@ -25,6 +25,6 @@ export default function Publications() {
             )
         })}
       </ul>
-    </section>
+    </article>
   )
 }
