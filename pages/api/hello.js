@@ -12,12 +12,11 @@ const transporter = nodemailer.createTransport({
 })
 
 export default function handler(req, res) {
-  const body = JSON.parse(req.body)
+  let body = JSON.parse(req.body)
   const { name, email, message } = body
 
   if (req.method === 'POST' && body) {
     try {
-      let err = false
       const mailData = {
         from: email,
         to: process.env.NEXT_PUBLIC_EMAIL,
@@ -26,12 +25,13 @@ export default function handler(req, res) {
       }
       transporter.sendMail(mailData, (error, info) => {
         if (error) {
-          console.error('email error', error, info)
-          res.status(500).json({ success: false, status: 500, error })
-          err = true
+          console.error('email error', error)
+          res.status(500).json({ status: 500, error })
+        }
+        if (info) {
+          res.status(200).json({ status: 200, info })
         }
       })
-      if (!err) res.status(200).json({ success: true, status: 200, body })
     } catch (error) {
       res.status(400).json({ success: false, status: 400, error })
     }
