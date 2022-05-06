@@ -1,0 +1,68 @@
+.contact {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.contact label,
+.contact button,
+.contact legend {
+  flex: 1;
+}
+
+.contact label {
+  display: flex;
+}
+
+.contact label span {
+  flex: 1;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 2;
+}
+
+.contact input {
+  height: 44px;
+  padding: 0 8px;
+}
+
+.contact textarea {
+  height: 88px;
+  padding: 8px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  /* border: 2px solid var(--color-primary); */
+  box-shadow: 0 0 8px #111;
+  outline: solid var(--color-primary);
+}
+
+.contact > button > div {
+  flex: 1;
+  padding: 12px;
+}
+
+.contact > button > div > strong {
+  margin: auto;
+}
+
+.submitted {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.submitted strong {
+  font-size: 2rem;
+}
