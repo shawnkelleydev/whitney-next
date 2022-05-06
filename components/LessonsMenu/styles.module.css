@@ -1,19 +1,15 @@
 .lessons-menu {
   display: flex;
+  gap: 1px;
 }
 
-.lessons-menu a {
-  --active-color: #111;
-  --active-background-color: var(--color-accent);
-  --background: rgb(60, 60, 60);
-  --text-color: #fff;
-  --hover-color: black;
-  --hover-background-color: var(--color-accent);
+.lessons-menu button[class*='button'] {
+  --border-radius: 0;
   align-items: center;
-  border: none;
-  display: flex;
-  flex: 1;
   justify-content: center;
-  padding: 24px;
-  text-align: center;
+}
+
+.lessons-menu strong {
+  display: flex;
+  padding: 12px;
 }

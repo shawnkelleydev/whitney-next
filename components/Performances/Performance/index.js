@@ -25,10 +25,12 @@ export default function Performance({ performance }) {
         </div>
         <a href={url} target='_blank' rel='noreferrer'>
           <Button>
-            <span>
-              <Ticket />
-            </span>
-            <strong>get tickets</strong>
+            <div className={styles['button-content']}>
+              <span>
+                <Ticket />
+              </span>
+              <strong>get tickets</strong>
+            </div>
           </Button>
         </a>
       </div>

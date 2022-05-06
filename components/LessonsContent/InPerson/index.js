@@ -1,4 +1,4 @@
-export default function Live() {
+export default function InPerson() {
   return (
     <article>
       <p>

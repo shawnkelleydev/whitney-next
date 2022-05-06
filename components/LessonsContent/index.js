@@ -1,22 +1,15 @@
-import { useRouter } from 'next/router'
-
-import Live from './Live'
+import InPerson from './InPerson'
 import Online from './Online'
 import Ready from './Ready'
 
 import styles from './styles.module.css'
 
-export default function LessonsContent() {
-  const router = useRouter()
-  let { route } = router
-
-  route === '/lessons' && router.push('/lessons/ready')
-
+export default function LessonsContent({ currentView }) {
   return (
     <div className={styles['lessons-content']}>
-      {route.includes('live') && <Live />}
-      {route.includes('online') && <Online />}
-      {route.includes('ready') && <Ready />}
+      {currentView === 'in person' && <InPerson />}
+      {currentView === 'online' && <Online />}
+      {currentView === 'ready' && <Ready />}
     </div>
   )
 }
