@@ -7,6 +7,7 @@ export default function Contact() {
   return (
     <PageWrapper>
       <Strip>
+        <h2>get in touch</h2>
         <ContactForm />
       </Strip>
     </PageWrapper>

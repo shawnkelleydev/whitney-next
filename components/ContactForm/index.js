@@ -68,8 +68,8 @@ export default function ContactForm() {
       </Button>
       <legend>* required</legend>
       <small>
-        All this does is send an email to Whitney. You won&apos;t even be added
-        to a database.
+        Your data will <em>not</em> be saved, and you will <em>not</em> be
+        signed up for an email list.
       </small>
     </form>
   )

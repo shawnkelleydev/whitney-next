@@ -11,7 +11,7 @@ export default function LessonsMenu({ currentView, setCurrentView, views }) {
           key={i}
           onClick={() => setCurrentView(view)}
         >
-          <strong>{view === 'ready' ? 'is my child ready?' : view}</strong>
+          <strong>{view === 'ready' ? 'Is my child ready?' : view}</strong>
         </Button>
       ))}
     </div>

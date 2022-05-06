@@ -1,9 +1,10 @@
 .contact {
   align-self: center;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 24px;
-  margin: auto;
+  min-width: 200px;
   max-width: 500px;
 }
 
@@ -40,7 +41,6 @@
 
 .contact input:focus,
 .contact textarea:focus {
-  /* border: 2px solid var(--color-primary); */
   box-shadow: 0 0 8px #111;
   outline: solid var(--color-primary);
 }
@@ -57,6 +57,10 @@
 .contact sup,
 .contact legend {
   color: red;
+}
+
+.contact small {
+  text-align: center;
 }
 
 .submitted {
