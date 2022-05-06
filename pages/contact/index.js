@@ -30,7 +30,7 @@ export default function Contact() {
             submit
           </button>
           <legend>
-            Good news -- you won't be added to a database or email list.
+            Good news -- you won&apos;t be added to a database or email list.
           </legend>
         </form>
       </Strip>

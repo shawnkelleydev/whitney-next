@@ -40,7 +40,14 @@
 }
 
 @media (max-width: 499px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
   .overlay {
+    padding: 8px;
     position: static;
   }
 
