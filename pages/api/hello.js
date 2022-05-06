@@ -17,6 +17,7 @@ export default function handler(req, res) {
 
   if (req.method === 'POST' && body) {
     try {
+      let err = false
       const mailData = {
         from: email,
         to: process.env.NEXT_PUBLIC_EMAIL,
@@ -24,9 +25,13 @@ export default function handler(req, res) {
         text: `From ${name}(${email}): ${message}`,
       }
       transporter.sendMail(mailData, (error, info) => {
-        if (error) return res.status(500).json({ success: false, error, info })
+        if (error) {
+          console.error('email error', error, info)
+          res.status(500).json({ success: false, status: 500, error })
+          err = true
+        }
       })
-      res.status(200).json({ success: true, status: 200, body })
+      if (!err) res.status(200).json({ success: true, status: 200, body })
     } catch (error) {
       res.status(400).json({ success: false, status: 400, error })
     }
