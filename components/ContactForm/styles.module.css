@@ -54,6 +54,11 @@
   margin: auto;
 }
 
+.contact sup,
+.contact legend {
+  color: red;
+}
+
 .submitted {
   align-items: center;
   display: flex;

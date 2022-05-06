@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import Bio from 'components/Bio'
 import PageWrapper from 'components/PageWrapper'
 import Performances from 'components/Performances'

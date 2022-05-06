@@ -5,11 +5,12 @@ import Input from './Input'
 
 import styles from './styles.module.css'
 
-export default function ContactForm({ onSubmit }) {
+export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+
   if (submitted)
     return (
       <div className={styles.submitted}>
@@ -18,24 +19,58 @@ export default function ContactForm({ onSubmit }) {
       </div>
     )
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSubmitted(true)
+
+    let body = {
+      name,
+      email,
+      message,
+    }
+
+    body = JSON.stringify(body)
+
+    const url = '/api/hello'
+    const payload = { method: 'POST', body }
+    fetch(url, payload)
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  }
+
   return (
-    <form className={styles.contact} onSubmit={onSubmit}>
-      <Input label='name' setValue={setName} type='text' value={name} />
-      <Input label='email' setValue={setEmail} type='email' value={email} />
+    <form className={styles.contact} onSubmit={(e) => handleSubmit(e)}>
+      <Input
+        label='name'
+        setValue={setName}
+        required
+        type='text'
+        value={name}
+      />
+      <Input
+        label='email'
+        setValue={setEmail}
+        required
+        type='email'
+        value={email}
+      />
       <Input
         label='message'
         setValue={setMessage}
+        required
         type='textarea'
         value={message}
       />
-      <Button type='submit' onClick={() => setSubmitted(true)}>
+      <Button type='submit'>
         <div>
           <strong>submit</strong>
         </div>
       </Button>
-      <legend>
-        Good news -- you won&apos;t be added to a database or email list.
-      </legend>
+      <legend>* required</legend>
+      <small>
+        All this does is send an email to Whitney. You won&apos;t even be added
+        to a database.
+      </small>
     </form>
   )
 }
