@@ -1,3 +1,5 @@
+import { responseSymbol } from 'next/dist/server/web/spec-compliant/fetch-event'
+
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const nodemailer = require('nodemailer')
 
@@ -26,9 +28,12 @@ export default function handler(req, res) {
       transporter.sendMail(mailData, (error, info) => {
         if (error) {
           console.error('email error', error)
+          res.status(500).json({ status: 500, error })
+        }
+        if (info) {
+          res.status(200).json({ status: 200 })
         }
       })
-      res.status(200).json({ status: 200 })
     } catch (error) {
       res.status(400).json({ status: 400, error })
     }
