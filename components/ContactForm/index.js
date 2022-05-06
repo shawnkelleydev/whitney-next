@@ -14,7 +14,7 @@ export default function ContactForm({ onSubmit }) {
     return (
       <div className={styles.submitted}>
         <strong>Thank you!</strong>
-        <span>I'll be in touch soon.</span>
+        <span>I&apos;ll be in touch soon.</span>
       </div>
     )
 
