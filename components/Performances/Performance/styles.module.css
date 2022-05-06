@@ -63,9 +63,11 @@
 }
 
 .button-content span {
+  align-items: center;
+  display: flex;
   flex: 1;
+  justify-content: center;
 }
-
 .button-content strong {
   align-items: center;
   display: flex;
