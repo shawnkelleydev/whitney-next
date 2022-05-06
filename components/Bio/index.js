@@ -13,13 +13,13 @@ export default function Bio() {
         </Link>
         , Dr. Whitney Kelley is praised for her innovative performances and
         pedagogical methods which have inspired audiences across the country.
-        Acclaimed for her <q>considerable technique</q> by the Winston-Salem
-        Journal, she has appeared as soloist in numerous orchestral and recital
-        settings, including guest appearances with world-renowned flutist Sir
-        James Galway, Hollywood film composer Dave Grusin, jazz flutist Nestor
-        Torres, and performances in the Ravinia Summer Music Festival, Texas
-        Music Festival, Cheyenne Symphony, Denver Pops, Jefferson Symphony, and
-        Longmont Symphony Orchestras.
+        Acclaimed for her <q>considerable technique</q> by the{' '}
+        <cite>Winston-Salem Journal</cite>, she has appeared as soloist in
+        numerous orchestral and recital settings, including guest appearances
+        with world-renowned flutist Sir James Galway, Hollywood film composer
+        Dave Grusin, jazz flutist Nestor Torres, and performances in the Ravinia
+        Summer Music Festival, Texas Music Festival, Cheyenne Symphony, Denver
+        Pops, Jefferson Symphony, and Longmont Symphony Orchestras.
       </p>
       <p>
         In addition to her solo and chamber pursuits, Whitney is an innovative
@@ -35,7 +35,7 @@ export default function Bio() {
       </p>
       <p>
         She received her D.M.A. in Flute Performance and Pedagogy from the
-        University of Colorado with Christina Jennings . Other teachers include
+        University of Colorado with Christina Jennings. Other teachers include
         Rebecca Paluzzi, Dr. Shelly Binder, Dr. Tadeu Coelho, and training with
         Suzuki flute founder, Toshio Takahashi.
       </p>

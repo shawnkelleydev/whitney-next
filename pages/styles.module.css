@@ -10,8 +10,8 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px;
   margin: auto;
   max-width: 1048px;
-  padding: 24px;
+  padding: 48px 24px;
 }
