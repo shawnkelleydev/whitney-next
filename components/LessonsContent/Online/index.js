@@ -33,10 +33,10 @@ export default function Online() {
         <li>External speakers</li>
       </ul>
       <p>
-        Please contact me about available times, and rates.&amp;nbsp;Students
-        are also encouraged to sign up for one in-person lesson at any of my
-        studio locations each month to receive more hands-on instruction (which
-        will balance out this limitation in online lessons).
+        Please contact me about available times, and rates. Students are also
+        encouraged to sign up for one in-person lesson at any of my studio
+        locations each month to receive more hands-on instruction (which will
+        balance out this limitation in online lessons).
       </p>
     </article>
   )
