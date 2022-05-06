@@ -23,8 +23,8 @@ export default function handler(req, res) {
         subject: `A message from ${name} via whitneykelley.com`,
         text: `From ${name}(${email}): ${message}`,
       }
-      transporter.sendMail(mailData, (err, info) => {
-        if (err) return console.error('Email error! ', err, info)
+      transporter.sendMail(mailData, (error, info) => {
+        if (error) return res.status(500).json({ success: false, error, info })
       })
       res.status(200).json({ success: true, status: 200, body })
     } catch (error) {
