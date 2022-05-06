@@ -26,14 +26,11 @@ export default function handler(req, res) {
       transporter.sendMail(mailData, (error, info) => {
         if (error) {
           console.error('email error', error)
-          res.status(500).json({ status: 500, error })
-        }
-        if (info) {
-          res.status(200).json({ status: 200, info })
         }
       })
+      res.status(200).json({ status: 200 })
     } catch (error) {
-      res.status(400).json({ success: false, status: 400, error })
+      res.status(400).json({ status: 400, error })
     }
   }
 
