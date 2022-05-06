@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
   port: 465, // true for 465, false for other ports
   host: 'smtp.gmail.com',
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
+    user: process.env.NEXT_PUBLIC_EMAIL,
+    pass: process.env.NEXT_PUBLIC_PASSWORD,
   },
   secure: true,
 })
@@ -19,7 +19,7 @@ export default function handler(req, res) {
     try {
       const mailData = {
         from: email,
-        to: process.env.EMAIL,
+        to: process.env.NEXT_PUBLIC_EMAIL,
         subject: `A message from ${name} via whitneykelley.com`,
         text: `From ${name}(${email}): ${message}`,
       }
