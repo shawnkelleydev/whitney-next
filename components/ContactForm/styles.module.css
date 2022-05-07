@@ -45,13 +45,11 @@
   outline: solid var(--color-primary);
 }
 
-.contact > button > div {
+.button {
+  display: flex;
   flex: 1;
+  justify-content: center;
   padding: 12px;
-}
-
-.contact > button > div > strong {
-  margin: auto;
 }
 
 .contact sup,

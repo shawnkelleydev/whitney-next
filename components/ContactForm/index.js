@@ -62,7 +62,7 @@ export default function ContactForm() {
         value={message}
       />
       <Button type='submit'>
-        <div>
+        <div className={styles.button}>
           <strong>submit</strong>
         </div>
       </Button>

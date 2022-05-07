@@ -6,6 +6,7 @@
   --transition-text: 0.2s ease-out;
   --transition-transform: 0.4s cubic-bezier(0.54, -0.33, 0.39, 1.62);
   --transition-background: 0.2s ease-out;
+  align-items: center;
   border: none;
   border-radius: var(--border-radius);
   color: #fff;
