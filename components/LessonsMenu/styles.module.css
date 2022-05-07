@@ -6,6 +6,7 @@
 .lessons-menu button[class*='button'] {
   --border-radius: 0;
   align-items: center;
+  flex: 1;
   justify-content: center;
 }
 
