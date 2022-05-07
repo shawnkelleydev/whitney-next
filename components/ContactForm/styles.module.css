@@ -1,4 +1,4 @@
-.contact {
+.contact-form {
   align-self: center;
   display: flex;
   flex: 1;
@@ -8,39 +8,39 @@
   max-width: 500px;
 }
 
-.contact label,
-.contact button,
-.contact legend {
+/* .contact-form label,
+.contact-form button,
+.contact-form legend {
   flex: 1;
-}
+} */
 
-.contact label {
+.contact-form label {
   display: flex;
 }
 
-.contact label span {
+.contact-form label span {
   flex: 1;
 }
 
-.contact input,
-.contact textarea {
+.contact-form input,
+.contact-form textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   flex: 2;
 }
 
-.contact input {
+.contact-form input {
   height: 44px;
   padding: 0 8px;
 }
 
-.contact textarea {
+.contact-form textarea {
   height: 88px;
   padding: 8px;
 }
 
-.contact input:focus,
-.contact textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   box-shadow: 0 0 8px #111;
   outline: solid var(--color-primary);
 }
@@ -52,12 +52,12 @@
   padding: 12px;
 }
 
-.contact sup,
-.contact legend {
+.contact-form sup,
+.contact-form legend {
   color: red;
 }
 
-.contact small {
+.contact-form small {
   text-align: center;
 }
 

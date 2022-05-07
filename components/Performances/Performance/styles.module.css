@@ -54,6 +54,7 @@
 
 .performance button[class*='button'] {
   --transition-text: 0.4s cubic-bezier(0.54, -0.33, 0.39, 1.62);
+  flex: 1;
 }
 
 .button-content {

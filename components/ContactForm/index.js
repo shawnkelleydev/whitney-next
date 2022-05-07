@@ -39,7 +39,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form className={styles.contact} onSubmit={(e) => handleSubmit(e)}>
+    <form className={styles['contact-form']} onSubmit={(e) => handleSubmit(e)}>
       <Input
         label='name'
         setValue={setName}
