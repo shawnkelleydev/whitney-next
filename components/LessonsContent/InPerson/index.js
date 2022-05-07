@@ -15,9 +15,9 @@ export default function InPerson() {
         very young age, they can also begin to learn music when they are young.
         In fact, the early years are developmentally a crucial time for
         developing mental processes and muscle coordination, and music lessons
-        are an effective way to maximize the child’s potential during this time
-        of their life. The principles of the Suzuki Method not only provide a
-        framework for learning new skills in young and beginner students, but
+        are an effective way to maximize the child&apos;s potential during this
+        time of their life. The principles of the Suzuki Method not only provide
+        a framework for learning new skills in young and beginner students, but
         they are also very effective for advanced players as they learn to
         perfect advanced skills and, nurture their own creativity and musical
         voice, and perform at a professional level.
