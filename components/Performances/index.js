@@ -10,17 +10,17 @@ export default function Performances() {
   const year = todayDate.getFullYear()
   const month = todayDate.getMonth() + 1
 
-  const perfs = denverPhilSchedule.filter(
+  const futurePerformances = denverPhilSchedule.filter(
     (concert) => concert.dates.year >= year && concert.dates.month >= month
   )
 
-  if (perfs.length < 1) return null
+  if (futurePerformances.length < 1) return null
 
   return (
     <Strip>
       <h2>performances</h2>
       <ul className={styles.performances}>
-        {perfs.map((performance, i) => (
+        {futurePerformances.map((performance, i) => (
           <Performance key={i} performance={performance} />
         ))}
       </ul>
