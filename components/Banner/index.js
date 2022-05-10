@@ -30,19 +30,21 @@ export default function Banner() {
       {windowWidth >= 500 && (
         <Image
           alt='dr. whitney kelley sitting, holding a gold flute perpendicular to the ground and smiling'
-          src='/website_banner_2.jpg'
-          width='12000'
           height='3900'
           layout='responsive'
+          priority='true'
+          src='/website_banner_2.jpg'
+          width='12000'
         />
       )}
       {windowWidth < 500 && (
         <Image
           alt='dr. whitney kelley sitting, holding a gold flute perpendicular to the ground and smiling'
-          src='/whitney_headshot_2.jpg'
-          width='5184'
           height='3456'
           layout='responsive'
+          priority='true'
+          src='/whitney_headshot_2.jpg'
+          width='5184'
         />
       )}
     </div>
