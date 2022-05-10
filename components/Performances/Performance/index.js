@@ -10,14 +10,16 @@ export default function Performance({ performance }) {
 
   return (
     <li className={styles.performance}>
-      <Image
-        alt={imageAlt}
-        height='800'
-        layout='responsive'
-        src={imageUrl}
-        width='1440'
-      />
       <div>
+        <Image
+          alt={imageAlt}
+          height='800'
+          layout='responsive'
+          src={imageUrl}
+          width='1440'
+        />
+      </div>
+      <div className={styles.info}>
         <div>
           <h3>{title}</h3>
           <Performers performers={performers} />
