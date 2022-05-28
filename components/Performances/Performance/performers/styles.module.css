@@ -1,7 +1,6 @@
 .performers {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column;
 }
 
 .performers strong {
