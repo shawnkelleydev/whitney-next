@@ -1,5 +1,7 @@
 import { denverPhilSchedule } from 'utils/constants/schedule'
 
+import { dateToComposite } from 'utils/conversions'
+
 import Performance from './Performance'
 import Strip from 'components/Strip'
 
@@ -10,8 +12,11 @@ export default function Performances() {
   const year = todayDate.getFullYear()
   const month = todayDate.getMonth() + 1
 
+  const todayComposite = dateToComposite(year, month)
+
   const futurePerformances = denverPhilSchedule.filter(
-    (concert) => concert.dates.year >= year && concert.dates.month >= month
+    (concert) =>
+      dateToComposite(concert.dates.year, concert.dates.month) >= todayComposite
   )
 
   if (futurePerformances.length < 1) return null
