@@ -1,4 +1,4 @@
-import { months } from 'constants/schedule'
+import { months } from 'utils/constants/schedule'
 
 import styles from './styles.module.css'
 

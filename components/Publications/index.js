@@ -1,5 +1,5 @@
 import Link from 'components/Link'
-import { pubs } from 'constants/pub'
+import { pubs } from 'utils/constants/pub'
 
 import styles from './styles.module.css'
 

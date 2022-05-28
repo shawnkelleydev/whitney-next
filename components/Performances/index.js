@@ -1,4 +1,4 @@
-import { denverPhilSchedule } from 'constants/schedule'
+import { denverPhilSchedule } from 'utils/constants/schedule'
 
 import Performance from './Performance'
 import Strip from 'components/Strip'

@@ -1,5 +1,5 @@
 import Link from 'components/Link'
-import { pages } from 'constants/data'
+import { pages } from 'utils/constants/data'
 
 import styles from './styles.module.css'
 

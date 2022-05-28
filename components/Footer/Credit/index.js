@@ -1,4 +1,4 @@
-import { meta } from 'constants/data'
+import { meta } from 'utils/constants/data'
 import Link from 'components/Link'
 
 import styles from './styles.module.css'
