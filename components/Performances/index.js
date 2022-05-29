@@ -16,7 +16,7 @@ export default function Performances() {
   const todayComposite = dateToComposite(year, month, day)
 
   const futurePerformances = denverPhilSchedule.filter(
-    (concert) => concert.dates.composite >= todayComposite
+    (concert) => concert.date.composite >= todayComposite
   )
 
   if (futurePerformances.length < 1) return null

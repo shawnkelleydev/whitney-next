@@ -1,11 +1,11 @@
 class Concert {
-  constructor(title, performers, url, imageUrl, imageAlt, dates) {
+  constructor(title, performers, url, imageUrl, imageAlt, date) {
     this.title = title
     this.performers = performers
     this.url = url
     this.imageUrl = imageUrl
     this.imageAlt = imageAlt
-    this.dates = dates
+    this.date = date
   }
 }
 

@@ -8,7 +8,6 @@ export default function _head() {
       <title>{meta.TITLE}</title>
       <meta name='description' content={meta.DESCRIPTION} />
       <meta name='keywords' content={meta.KEYWORDS} />
-      {/* TODO: Add custom favicon to public */}
       <link rel='icon' href='/favicon.ico' />
     </Head>
   )

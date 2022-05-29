@@ -6,7 +6,7 @@ import Ticket from 'components/Icons/Ticket'
 import styles from './styles.module.css'
 
 export default function Performance({ performance }) {
-  const { dates, imageAlt, imageUrl, performers, title, url } = performance
+  const { date, imageAlt, imageUrl, performers, title, url } = performance
 
   return (
     <li className={styles.performance}>
@@ -23,7 +23,7 @@ export default function Performance({ performance }) {
         <div>
           <h3>{title}</h3>
           <Performers performers={performers} />
-          <time>{dates.rendered}</time>
+          <time>{date.rendered}</time>
         </div>
         <a href={url} target='_blank' rel='noreferrer'>
           <Button>
