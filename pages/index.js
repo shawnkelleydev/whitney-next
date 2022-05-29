@@ -6,10 +6,10 @@ import Publications from 'components/Publications'
 
 import styles from './styles.module.css'
 
-export default function Home({ staticImages }) {
+export default function Home() {
   return (
     <div className={styles.home}>
-      <Performances staticImages={staticImages} />
+      <Performances />
       <section>
         <Bio />
         <Publications />

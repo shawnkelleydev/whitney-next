@@ -7,15 +7,13 @@ import Strip from 'components/Strip'
 
 import styles from './styles.module.css'
 
-export default function Performances({ staticImages }) {
+export default function Performances() {
   let todayDate = new Date()
   const year = todayDate.getFullYear()
   const month = todayDate.getMonth() + 1
   const day = todayDate.getDate()
 
   const todayComposite = dateToComposite(year, month, day)
-
-  denverPhilSchedule.forEach((object, i) => (object.imageUrl = staticImages[i]))
 
   const futurePerformances = denverPhilSchedule.filter(
     (concert) => concert.date.composite >= todayComposite
