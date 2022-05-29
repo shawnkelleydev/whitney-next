@@ -10,17 +10,9 @@ export const meta = {
   DEVELOPER: 'Shawn Kelley',
   DEVELOPER_URL: 'https://www.shawnkelley.dev',
   KEYWORDS:
-    'flute, whitney, kelley, lessons, flute lessons, northglenn, thornton, westminster, broomfield',
+    'flute, whitney, kelley, lessons, flute lessons, northglenn, thornton, westminster, broomfield, colorado',
   TAG: 'Flute',
   TITLE: 'Dr. Whitney Kelley, Flute',
 }
 
-// TODO: edit pages
 export const pages = ['home', 'lessons', 'contact']
-
-// TODO: edit footerLinks
-export const footerLinks = [
-  { name: 'LINK1', url: '/' },
-  { name: 'LINK2', url: '/' },
-  { name: 'LINK3', url: '/' },
-]
