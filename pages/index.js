@@ -1,5 +1,3 @@
-import { denverPhilSchedule } from 'utils/constants/schedule'
-
 import Bio from 'components/Bio'
 import Performances from 'components/Performances'
 import Publications from 'components/Publications'
@@ -16,15 +14,4 @@ export default function Home() {
       </section>
     </div>
   )
-}
-
-export async function getStaticProps(context) {
-  const staticImages = []
-  denverPhilSchedule.forEach((concert) => {
-    staticImages.push(concert.imageUrl)
-  })
-
-  const props = { staticImages }
-
-  return { props }
 }
