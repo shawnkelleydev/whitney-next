@@ -30,7 +30,13 @@ const tchaik5 = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2022/05/dpo-2223-seasonhero-1-720x400.jpg',
   standardImageAlt,
-  { composite: 20221007, rendered: 'October 7, 2022' }
+  {
+    year: 2022,
+    month: 10,
+    day: 7,
+    composite: 20221007,
+    rendered: 'October 7, 2022',
+  }
 )
 
 const beethovenPiano = new Concert(
@@ -39,7 +45,13 @@ const beethovenPiano = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2022/05/dpo-2223-seasonhero-2-720x400.jpg',
   standardImageAlt,
-  { composite: 20221112, rendered: 'November 12, 2022' }
+  {
+    year: 2022,
+    month: 11,
+    day: 12,
+    composite: 20221112,
+    rendered: 'November 12, 2022',
+  }
 )
 
 const holidayCheer = new Concert(
@@ -48,7 +60,13 @@ const holidayCheer = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2021/05/DPO-2122-Website-3-720x400.jpg',
   standardImageAlt,
-  { composite: 20221217, rendered: 'December 16 & 17, 2022' }
+  {
+    year: 2022,
+    month: 12,
+    day: 17,
+    composite: 20221217,
+    rendered: 'December 16 & 17, 2022',
+  }
 )
 
 const dvorak8 = new Concert(
@@ -61,7 +79,13 @@ const dvorak8 = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2022/05/dpo-2223-seasonhero-4-720x400.jpg',
   standardImageAlt,
-  { composite: 20230304, rendered: 'March 4, 2023' }
+  {
+    year: 2023,
+    month: 3,
+    day: 4,
+    composite: 20230304,
+    rendered: 'March 4, 2023',
+  }
 )
 
 const brahms1 = new Concert(
@@ -70,7 +94,13 @@ const brahms1 = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2022/05/dpo-2223-seasonhero-5-720x400.jpg',
   standardImageAlt,
-  { composite: 20230408, rendered: 'April 8, 2023' }
+  {
+    year: 2023,
+    month: 4,
+    day: 8,
+    composite: 20230408,
+    rendered: 'April 8, 2023',
+  }
 )
 
 const mozart40 = new Concert(
@@ -79,7 +109,13 @@ const mozart40 = new Concert(
   seasonTickets,
   'https://denverphilharmonic.org/wp-content/uploads/2022/05/dpo-2223-seasonhero-6-720x400.jpg',
   standardImageAlt,
-  { composite: 20230525, rendered: 'May 25, 2023' }
+  {
+    year: 2023,
+    month: 5,
+    day: 25,
+    composite: 20230525,
+    rendered: 'May 25, 2023',
+  }
 )
 
 export const denverPhilSchedule = [

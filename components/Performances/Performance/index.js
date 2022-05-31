@@ -1,12 +1,14 @@
 import Button from 'components/Button'
 import Image from 'next/image'
-import Performers from './performers'
+import Performers from './Performers'
 import Ticket from 'components/Icons/Ticket'
 
 import styles from './styles.module.css'
 
 export default function Performance({ performance }) {
   const { date, imageAlt, imageUrl, performers, title, url } = performance
+
+  const dateTime = date.year + '-' + date.month + '-' + date.day
 
   return (
     <li className={styles.performance}>
@@ -23,7 +25,7 @@ export default function Performance({ performance }) {
         <div>
           <h3>{title}</h3>
           <Performers performers={performers} />
-          <time>{date.rendered}</time>
+          <time dateTime={dateTime}>{date.rendered}</time>
         </div>
         <a href={url} target='_blank' rel='noreferrer'>
           <Button>
