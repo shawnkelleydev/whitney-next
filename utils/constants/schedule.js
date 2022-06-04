@@ -118,8 +118,24 @@ const mozart40 = new Concert(
   }
 )
 
+const munich = new Concert(
+  'Beethoven in Munich',
+  ['Denver Philharmonic Orchestra', 'Bavarian Philahrmonic Orchestra Chorus'],
+  'https://www.muenchenticket.de/tickets/performances/e16bbx1gi9v5/9-Beethoven',
+  'https://denverphilharmonic.org/wp-content/uploads/2021/08/dpo-art2122-d2-bday.jpg',
+  'outline of a cupcake filled with yellow and orange balloons and encircled by outward-pointing candles and confetti-like strokes',
+  {
+    year: 2022,
+    month: 7,
+    day: 16,
+    composite: 20220716,
+    rendered: 'July 16, 2022',
+  }
+)
+
 export const denverPhilSchedule = [
   beethovenCelebration,
+  munich,
   tchaik5,
   beethovenPiano,
   holidayCheer,
