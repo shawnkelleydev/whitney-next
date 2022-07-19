@@ -1,5 +1,3 @@
-import { responseSymbol } from 'next/dist/server/web/spec-compliant/fetch-event'
-
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const nodemailer = require('nodemailer')
 
