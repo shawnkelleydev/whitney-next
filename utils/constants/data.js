@@ -8,7 +8,7 @@ export const meta = {
   DESCRIPTION:
     'The digital home of Dr. Whitney Kelley, flute teacher, scholar, and principle flute of the Denver Philharmonic Orchestra.  Whitney Kelley offers in-person flute lessons in Northglenn, Colorado.',
   DEVELOPER: 'Shawn Kelley',
-  DEVELOPER_URL: 'https://www.shawnkelley.dev',
+  DEVELOPER_URL: 'https://www.linkedin.com/in/shawnkelleydev/',
   KEYWORDS:
     'flute, whitney, kelley, lessons, flute lessons, northglenn, thornton, westminster, broomfield, colorado',
   TAG: 'Flute',
