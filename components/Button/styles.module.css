@@ -3,23 +3,25 @@
   --color-background: var(--color-primary);
   --color-highlight-background: var(--color-accent);
   --color-highlight-text: #111;
+  --padding: 8px;
   --transition-text: 0.2s ease-out;
   --transition-transform: 0.4s cubic-bezier(0.54, -0.33, 0.39, 1.62);
   --transition-background: 0.2s ease-out;
   align-items: center;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius, 8px);
   color: #fff;
   display: flex;
   fill: #fff;
   font-size: 1.2em;
   overflow: hidden;
+  padding: var(--padding, 8px);
   position: relative;
   z-index: 1;
 }
 
 .button::before {
-  background: var(--color-background);
+  background: var(--color-background, var(--color-primary));
   content: '';
   position: absolute;
   z-index: -2;
@@ -30,11 +32,11 @@
 }
 
 .button::after {
-  background: var(--color-highlight-background);
+  background: var(--color-highlight-background, var(--color-accent));
   content: '';
   height: 0;
   position: absolute;
-  transition: var(--transition-background);
+  transition: var(--transition-background, 0.2s ease-out);
   width: 100%;
   z-index: -1;
   left: 0;
@@ -43,8 +45,8 @@
 
 .button:hover,
 .button[class*='active'] {
-  color: var(--color-highlight-text);
-  fill: var(--color-highlight-text);
+  color: var(--color-highlight-text, #111);
+  fill: var(--color-highlight-text, #111);
 }
 
 .button:hover::after,

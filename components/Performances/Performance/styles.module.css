@@ -5,7 +5,6 @@
   box-shadow: 0 4px 8px #555;
   color: #111;
   display: flex;
-  /* flex: 1 300px; */
   flex-direction: column;
   position: relative;
   transition: 0.3s cubic-bezier(0.59, -0.39, 0.42, 1.52);
@@ -46,30 +45,15 @@
   text-align: center;
 }
 
-.performance a {
-  display: flex;
-  flex: 1;
-  margin-top: auto;
-}
-
-.performance button[class*='button'] {
+.button {
   --transition-text: 0.4s cubic-bezier(0.54, -0.33, 0.39, 1.62);
-  flex: 1;
 }
 
-.button-content {
-  display: flex;
-  flex: 1;
-  padding: 8px;
+.button svg {
+  margin: 0 8px;
 }
 
-.button-content span {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-.button-content strong {
+.button strong {
   align-items: center;
   display: flex;
   flex: 2;
@@ -77,10 +61,10 @@
   text-transform: uppercase;
 }
 
-.button-content:hover svg {
+.button:hover svg {
   transform: rotate(5deg) scale(1.1);
 }
 
-.button-content:hover strong {
+.button:hover strong {
   transform: rotate(-5deg) scale(1.1);
 }

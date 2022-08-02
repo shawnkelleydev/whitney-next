@@ -27,16 +27,13 @@ export default function Performance({ performance }) {
           <Performers performers={performers} />
           <time dateTime={dateTime}>{date.rendered}</time>
         </div>
-        <a href={url} target='_blank' rel='noreferrer'>
-          <Button>
-            <div className={styles['button-content']}>
-              <span>
-                <Ticket />
-              </span>
-              <strong>get tickets</strong>
-            </div>
-          </Button>
-        </a>
+        <Button
+          className={styles.button}
+          onClick={() => window.open(url, '_blank')}
+        >
+          <Ticket />
+          <strong>get tickets</strong>
+        </Button>
       </div>
     </li>
   )

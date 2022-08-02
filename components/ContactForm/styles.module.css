@@ -8,12 +8,6 @@
   max-width: 500px;
 }
 
-/* .contact-form label,
-.contact-form button,
-.contact-form legend {
-  flex: 1;
-} */
-
 .contact-form label {
   display: flex;
 }
@@ -46,14 +40,12 @@
 }
 
 .button {
-  display: flex;
-  flex: 1;
+  --padding: 12px;
   justify-content: center;
-  padding: 12px;
 }
 
 .contact-form sup,
-.contact-form legend {
+.contact-form > span {
   color: red;
 }
 

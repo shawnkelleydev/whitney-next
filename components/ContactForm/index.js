@@ -61,12 +61,10 @@ export default function ContactForm() {
         type='textarea'
         value={message}
       />
-      <Button type='submit'>
-        <div className={styles.button}>
-          <strong>submit</strong>
-        </div>
+      <Button className={styles.button} type='submit'>
+        <strong>submit</strong>
       </Button>
-      <legend>* required</legend>
+      <span>* required</span>
       <small>
         Your data will <em>not</em> be saved, and you will <em>not</em> be
         signed up for an email list.
